@@ -10,17 +10,7 @@ import { createStore, applyMiddleware } from 'redux'
 import { compose } from 'ramda'
 import { Provider } from 'react-redux'
 
-const initialState = {
-  contacts:[
-    "Mary",
-    'Bob',
-    'Lucy'
-  ]
-  // contacts: compose(
-  //   fromPairs,
-  //   map(i => ([ shortid.generate(),  { name: faker.name.findName() }]))
-  // )(range(1,10))
-}
+const initialState = {}
 
 const composeMiddleWare = () => window.devToolsExtension ?
   compose(applyMiddleware(thunk), window.devToolsExtension ? window.devToolsExtension() : undefined) :

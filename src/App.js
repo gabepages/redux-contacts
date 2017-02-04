@@ -5,9 +5,11 @@ import ContactsList from "./componets/ContactsList"
 import EditContacts from "./componets/EditContacts"
 
 const App = () =>
-  <div className="App">
-    <EditContacts/>
-    <ContactsList/>
+  <div className="App container">
+    <div className='row'>
+      <EditContacts/>
+      <ContactsList/>
+    </div>
   </div>
 
 
